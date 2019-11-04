@@ -20,7 +20,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
 				<?php the_content(); ?>
-				<a class="button" href="<?php echo site_url('/blog/') ?>">View Our Work</a>
+				<a class="button" href="<?php echo site_url('/case-studies/') ?>">View Our Work</a>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 	</div><!-- #primary -->
@@ -46,19 +46,5 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="recent-posts">
-		<div class="site-content">
-			<div class="blog-post">
-				<h4>From the Blog</h4>
-				<?php query_posts('posts_per_page=1'); ?>
-				<?php while( have_posts() ) : ?>
-					<?php the_post(); ?>
-					<h3><?php the_title(); ?></h3>
-					<?php the_excerpt(); ?>
-				<?php endwhile; ?>
-				<?php wp_reset_query(); ?>
-			</div>	
-		</div>
-	</section>
-
+	
 <?php get_footer(); ?>

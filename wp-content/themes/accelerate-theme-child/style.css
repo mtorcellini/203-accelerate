@@ -68,6 +68,34 @@ Text Domain:  accelerate-theme-child
 	text-align: center;
 }
 
+/***** FOOTER *****/
+
+.social-media-navigation span {
+	display: none;
+}
+.social-media-navigation ul {
+	list-style: none;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.social-media-navigation li {
+	display: inline-block;
+	height: 2.3rem;
+	width: 2.3rem;
+	background: #3b3b3b;
+	margin: 0 8px;
+	text-align: center;
+	border-radius: 50%;
+
+
+}
+
+.social-media-navigation a {
+	color: white;
+	font-size: 1.5rem;
+}
+
 
 /***** CASE STUDIES *****/
 
@@ -112,4 +140,26 @@ a.read-more-link {
 	font-size: 15px;
 	font-weight: 600;
 	line-height: 27.5px;
+}
+
+/***** CASE STUDY ARCHIVE *****/
+
+.post-type-archive-case_studies article {
+	margin-bottom: 30px;
+	overflow: auto;
+}
+
+.post-type-archive-case_studies aside {
+	width: 50%;
+	float: left;
+}
+
+.post-type-archive-case_studies h4 {
+	color: #878787;
+	margin: 0;
+}
+
+.post-type-archive-case_studies p {
+	margin: 10px 0;
+	width: 75%;
 }
