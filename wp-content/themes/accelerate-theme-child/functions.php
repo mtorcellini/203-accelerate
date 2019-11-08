@@ -31,6 +31,17 @@ function create_custom_post_types() {
 			'rewrite' => array('slug' => 'case-studies'),	// name used in the URLs for these posts //
 			)
 		);
+		register_post_type( 'services', 		// gives custom post type a unique name //
+		array(									// array ath defines a bunch of settings for new post type //
+			'labels' => array(
+				'name' => __('Services'),	// human readable name seen in dashboard //
+				'singular_name' => __('Service'),	// human readable name for singular post //
+			),
+			'public' => true,
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'services'),	// name used in the URLs for these posts //
+			)
+		);
 	}
 
 add_action('init', 'create_custom_post_types');

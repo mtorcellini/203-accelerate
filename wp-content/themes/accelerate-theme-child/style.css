@@ -96,6 +96,43 @@ Text Domain:  accelerate-theme-child
 	font-size: 1.5rem;
 }
 
+/***** ABOUT *****/
+
+#about h3, #about > p {
+	margin: 0 auto;
+	text-align: center;
+	width: 60%;
+}
+
+#about article {
+	clear: both;
+	width: 100%;
+}
+
+#about h2 {
+	margin-top: 0;
+}
+
+#about article:first-of-type {
+	margin-top: 30px;
+}
+
+#about article:nth-child(2n+3) > * {
+	float: left;
+}
+
+#about article:nth-child(2n+4) > * {
+	float: right
+}
+
+#about article > figure {
+	width: 25%;
+}
+
+#about article > div {
+	width: 75%;
+	padding: 30px;
+}
 
 /***** CASE STUDIES *****/
 
